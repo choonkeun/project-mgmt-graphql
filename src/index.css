@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand {
+  color: #df3ca6;
+}
+
+.navbar-brand-menu {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.navbar-brand-menu:hover {
+  color: #df3ca6;
+  background-color: lightgray;
+  opacity: 0.9;
+}
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #df3ca6 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #df3ca6;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #7430f9;
+}
+
+.btn-secondary:hover {
+  background-color: #7430f9;
+  opacity: 0.9;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th, tbody td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+thead th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Set the first column to 30rem */
+thead th:nth-child(1), tbody td:nth-child(1) {
+  width: 15rem;
+}
+
+/* Ensure columns 2 to 4 have the same width */
+thead th:nth-child(n+2):nth-child(-n+4), tbody td:nth-child(n+2):nth-child(-n+4) {
+  width: calc((100% - 30rem - 2rem) / 3);
+}
+
+/* Set the width of the rightmost (fifth) column */
+thead th:nth-child(5), tbody td:nth-child(5) {
+  width: 6rem;
+}
+
+/* GraphQL PlayGround*/
+.green-bold-link {
+  color: green;
+  font-weight: bold;
+}
+
+/* nav Button */
+.custom-primary {
+  width: 6rem;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Project Radio Input */
+.radio-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the spacing between radio buttons as needed */
+}
+
+.radio-buttons label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Adjust the right margin if needed */
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 5px; /* Adjust the right margin if needed */
+}
+
+/* Movies Page */
+.container {
+  margin: 20px;
+}
+
+.movie-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* Movies Page */ 
+
+.no-border {
+  border: none !important; 
+  box-shadow: none !important; 
+  padding-left: 20px; /* Adjust padding to align text */
+  position: relative;
+}
+
+.no-border::before {
+  content: '•'; /* Use a bullet character */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: black; /* Bullet color */
+}
+
+/* 
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid #ccc; */
+  /* margin-bottom: 0.5rem; 
+  background-color: #f8f8f8;
+  height: 50px; /* Set a fixed height 
+} 
+ */
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 10px;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 2px;
+}
